@@ -1,0 +1,29 @@
+    /* CSS => Cascading Style Sheets.
+      CSS can be added to HTML documents in 3 ways:
+      1) Inline - by using the style attribute inside HTML elements
+      2) Internal - by using a <style> element in the <head> section
+      3) External - by using a <link> element to link to an external CSS file  */
+
+
+      /* Margin: Space outside the element (between elements).
+      Padding: Space inside the element (between content and border). */
+
+
+      /* best font-family : */
+      /* font-family: cursive; */
+      /* font-family: 'Courier New', Courier, monospace; */
+      /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+      /* font-family: Georgia, 'Times New Roman', Times, serif; */
+
+h2 {
+  color: rgb(169, 196, 15);
+  background-color: rgb(159, 15, 116);
+  font-family: cursive;
+  /* font-size: large; */
+  border: 3px solid tan;
+  /* The CSS padding property defines a padding (space) between the text and the border. */
+  padding: 10px;
+  /* The CSS margin property defines a margin (space) outside the border. */
+  margin: 30px;
+}
+

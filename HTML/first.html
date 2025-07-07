@@ -1,0 +1,450 @@
+<html>
+  <head>
+    <!-- add title -->
+    <title>HTML Practical</title>
+
+    <!-- add favicon  -->
+    <link rel="icon" href="../images/smiley.gif" />
+
+    <!-- This is called use Internal CSS which is only used in head only -->
+    <style>
+      h1 {
+        color: rgb(63, 225, 182);
+        background-color: rgb(22, 125, 181);
+        font-family: "Courier New", Courier, monospace;
+        /* font-size: large; */
+        border: 2px solid powderblue;
+        padding: 10px;
+        margin: 30px;
+      }
+      a:link {
+        color: green;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:visited {
+        color: pink;
+        background-color: transparent;
+        text-decoration: none;
+      }
+      a:hover {
+        color: red;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+      a:active {
+        color: yellow;
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    </style>
+
+    <!-- This is called External CSS which is link to that file and that also in head tag only -->
+    <link rel="style" href="../CSS/styles.css" />
+  </head>
+  <body>
+    <hr />
+    <h1>Used Internal CSS</h1>
+
+    <h2>Check it External CSS worked.</h2>
+
+    <h3
+      style="
+        color: rgb(188, 31, 227);
+        background-color: aqua;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande',
+          'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        border: 2px solid greenyellow;
+        padding: 10px;
+        margin: 30px;
+      "
+    >
+      h3 tag and also used Inline CSS
+    </h3>
+
+    <hr />
+    <a
+      href="https://vivekwithcar.vercel.app/"
+      target="_blank"
+      title="Show to Vivek's portfolio"
+      style="
+        color: rgb(29, 174, 222);
+        border: 5px solid yellow;
+        padding: 1px;
+        margin: 14px;
+      "
+      >Click here</a
+    >
+    <hr />
+
+    <p><a href="#v1"> Go to Chapter 1 </a></p>
+
+    <hr />
+    <!-- Use the HTML image attributes to set the size of the image to 200 pixels
+    wide and 150 pixels tall. -->
+    <img
+      src="../images/yinyang-removebg.png"
+      src="yinyang"
+      height="150px"
+      width="250px"
+    />
+
+    <hr />
+    <!--  The <pre> tag in HTML is used to display preformatted text. -->
+    <pre>
+    My Bonnie lies over the ocean.
+    My Bonnie lies over the sea.
+    My Bonnie lies over the ocean.
+    Oh, bring back my Bonnie to me.
+    </pre>
+
+    <hr />
+    <!-- more highlight -->
+    <p>
+      In this used
+      <strong> strong tag </strong>
+      which is used to highlight text.
+    </p>
+
+    <hr />
+    <!-- Use <em> for soft emphasis (like italics). -->
+    <p>
+      This is used em tag
+      <em> like italics </em>
+      to emphasize text.
+    </p>
+
+    <hr />
+    <!-- The <mark> tag is used to highlight text — like using a highlighter pen. -->
+    <p>
+      mark tag which
+      <mark style="color: red"> used for </mark>
+      pen highlighter
+    </p>
+
+    <hr />
+    <!-- The <sub> tag stands for subscript. It makes the text smaller and lower, like in chemical formulas. -->
+    <p>
+      H
+      <sub> 2 </sub>
+      O is the scientific term for water.
+    </p>
+    <hr />
+
+    <!-- <q> =>	Short inline quotes =>	Adds quotes ("") -->
+    <p>She said, <q>Practice makes perfect.</q></p>
+    <hr />
+
+    <!-- <blockquote> =>	Long/formal quotes => Indented block -->
+    <blockquote>Knowledge is power.</blockquote>
+
+    <!-- Do you remember any legal HTML color names? Which one of the following is a legal HTML color? -->
+    <!-- =>Tomato -->
+
+    <link rel="stylesheet" href="../CSS/styles.css" />
+    <hr />
+
+    <style>
+      a:hover {
+        color: red;
+      }
+    </style>
+    <p>This is me <a>Good guy</a></p>
+    <hr />
+
+    <style>
+      b:hover {
+        color: red;
+        background-color: rgb(38, 220, 223);
+      }
+    </style>
+    <p>This is a <b>bold</b> word.</p>
+    <hr />
+
+    <!-- src =>	Source              =>	<img>,<script> =>	To load and display a file 
+        ex.,<img>, <script>, <iframe>
+        href =>	Hyperlink Reference =>	<a>, <link>    =>	To link to or open a file 
+        ex., <a>,<link>        
+    -->
+
+    <!-- background-image-->
+    <style>
+      body {
+        background-image: url("../images/AI.jpg");
+        /* background-repeat: no-repeat; */
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+      }
+    </style>
+
+    <p style="color: red">I am red</p>
+    <hr />
+
+    <!-- strike the text -->
+    <del>Hello</del>
+    <hr />
+
+    <!-- Subscript text -->
+    <p>H<sub>2</sub>0</p>
+    <p>sub tag use</p>
+    <hr />
+
+    <!-- Superscript text -->
+    <p>4<sup>°</sup>C</p>
+    <p>sup tag use</p>
+    <hr />
+
+    <!-- dotted underline -->
+    <p>This is my <abbr title="name">Name</abbr></p>
+    <hr />
+
+    <!-- To use an HTML button as a link, you have to add some JavaScript code.
+    JavaScript allows you to specify what happens at certain events, such as a
+    click of a button: -->
+    <button onclick="alert('This is alert message using JavaScript')">
+      Alert message
+    </button>
+    <hr />
+
+    <!-- HTML Links - Create Bookmarks
+    Use the id attribute (id="value") to define bookmarks in a page
+    Use the href attribute (href="#value") to link to the bookmark -->
+    <h4 id="v1">
+      Chapter - 1 ( Bookmark in HTML )
+      <p>This is Bookmark in HTML like you give it id then then it works.</p>
+    </h4>
+    <hr />
+
+    <!-- add gif  -->
+    <img
+      src="../images/programming.gif"
+      alt="Computer man"
+      style="width: 50px; height: 50px"
+    />
+    <hr />
+
+    <!-- use float in img tag -->
+    <p>
+      <img
+        src="../images/smiley.gif"
+        alt="smiley ball"
+        style="float: left; width: 30px; height: 30px"
+      />
+      This is smiley cartoon for you because of you don't take stress, just
+      chill bro.
+    </p>
+    <hr />
+
+    <!-- use map in img tag -->
+    <img
+      src="../images/3d image.webp"
+      alt="smiley click"
+      usemap="#smiley"
+      width="100px"
+      height="100px"
+    />
+
+    <map name="smiley">
+      <area
+        shape="circle"
+        coords="34,44,270,359"
+        alt="Computer"
+        href="./second.html"
+      />
+    </map>
+    <hr />
+
+    <!-- Make table in html 
+         tr stands for table row.
+         th stands for table header.
+         td stands for table data. -->
+
+    <!-- <style>
+      table {
+        font-family: cursive;
+        width: 100%;
+      }
+      td,
+      th {
+        border: 5px solid #c1d40f;
+        text-align: left;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #dc9d9d;
+      }
+    </style> -->
+
+    <!-- <table>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Phone no</th>
+        <th>Position</th>
+        <th>CTC</th>
+      </tr>
+      <tr>
+        <td>Gaurav</td>
+        <td>gaurav@gmail.com</td>
+        <td>9426713620</td>
+        <td>Front-end Developer</td>
+        <td>7.1 LPA</td>
+      </tr>
+      <tr>
+        <td>Parth</td>
+        <td>parth@gmail.com</td>
+        <td>8426713620</td>
+        <td>Backend-Developer</td>
+        <td>6.5 LPA</td>
+      </tr>
+      <tr>
+        <td>Prabhat</td>
+        <td>prabhat@gmail.com</td>
+        <td>7426713620</td>
+        <td>UI & UX</td>
+        <td>3.7 LPA</td>
+      </tr>
+      <tr>
+        <td>Pruthvi</td>
+        <td>pruthvi@gmail.com</td>
+        <td>9126713620</td>
+        <td>Full-stack Developer</td>
+        <td>7.5 LPA</td>
+      </tr>
+      <tr>
+        <td>Vivek</td>
+        <td>vivek@gmail.com</td>
+        <td>9876543210</td>
+        <td>Founder</td>
+        <td>730 CR</td>
+      </tr>
+    </table> -->
+
+    <!-- Practice it -->
+    <style>
+      table {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        border: 1px solid rgb(111, 177, 25);
+      }
+      th,
+      td {
+        padding: 15px;
+        text-align: left;
+        border-style: dotted;
+      }
+      tr:nth-child(even) {
+        background-color: #8f2d2d;
+      }
+    </style>
+
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Mobile no</th>
+      </tr>
+      <tr>
+        <td>ABC</td>
+        <td>abc@gmail.com</td>
+        <td>98761325129</td>
+      </tr>
+      <tr>
+        <td>XYZ</td>
+        <td>XYZ@gmail.com</td>
+        <td>98761325129</td>
+      </tr>
+      <tr>
+        <td>PQR</td>
+        <td>PQR@gmail.com</td>
+        <td>98761325129</td>
+      </tr>
+      <tr>
+        <td>VWX</td>
+        <td>VWX@gmail.com</td>
+        <td>98761325129</td>
+      </tr>
+    </table>
+    <hr />
+
+    <!-- list in html with number and dot-->
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+    </ol>
+    <ol style="list-style-type: disc">
+      <li>JavaScript</li>
+      <li>ReactJS</li>
+      <li>NodeJS</li>
+      <li>MongoDB</li>
+      <li>NextJS</li>
+    </ol>
+    <hr />
+
+    <!-- one class which used in many div like this  -->
+    <!-- The syntax for class is: write a dot character (.) -->
+     <!-- A class name can be used by multiple HTML elements, 
+     while an id name must only be used by one HTML element within the page -->
+    <style>
+      .v1 {
+        background-color: lightblue;
+        color: white;
+        font-family: cursive;
+        border: 2px solid black;
+        margin: 20px;
+        padding: 20px;
+      }
+    </style>
+    <div class="v1">
+      <h4>Hello</h4>
+      <p>This is in English</p>
+    </div>
+    <div class="v1">
+      <h4>Kem Cho ?</h4>
+      <p>This is in Gujarati</p>
+    </div>
+    <div class="v1">
+      <h4>Namaste</h4>
+      <p>This is in Hindi</p>
+    </div>
+    <div class="v1">
+      <h4>Hola</h4>
+      <p>This is in spanish</p>
+    </div>
+    <hr />
+
+
+    <!-- The syntax for id is: write a hash character (#) -->
+     <!-- A class name can be used by multiple HTML elements, 
+     while an id name must only be used by one HTML element within the page -->
+    <style>
+      #hola{
+        color: blanchedalmond;
+        background-color: rgb(13, 10, 10); 
+        border: 2px solid rgb(241, 37, 37);
+        margin: 20px;
+        padding: 20px;
+        font-family: cursive;
+      }
+    </style>
+      
+      <div id="hola">
+        <h3>Hola, I'm from Spain. what about you ?</h3>
+      </div>
+
+
+      <!-- This is iframe which is used to display another web page in the current web page. -->
+      <iframe src="https://vivekwithcar.vercel.app/" frameborder="0" height="300px" width="100%" title="Vivek's portfolio"></iframe>
+
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
+</html>

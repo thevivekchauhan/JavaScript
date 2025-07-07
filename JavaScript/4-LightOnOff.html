@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Light's turn On & Off</title>
+    <style>
+      button {
+        background-color: #9edf9e;
+        cursor: pointer;
+        padding: 20px;
+        margin: 20px;
+        border: 2px solid tomato;
+        border-radius: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <img id="bulbID" src="./images/pic_bulboff.gif" alt="lightOff" />
+      <p>
+        <button onclick="bulbID(1)">Light On</button>
+        <button style="background-color: red; 
+        border: 2px solid #9edf9e;" onclick="bulbID(0)">Light Off</button>
+      </p>
+    </center>
+    <script>
+        function bulbID(vc){
+            var img;
+            if(vc==0){
+                img="./images/pic_bulboff.gif"
+            }
+            else{
+                img="./images/pic_bulbon.gif"
+            }
+            document.getElementById("bulbID").src = img;
+        }
+    </script>
+
+  </body>
+</html>
+
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bulb</title>
+</head>
+<body>
+
+    <img id="bulbID" src="./images/pic_bulboff.gif" alt="">
+
+    <button onclick="bulbID(1)">Light On</button>
+    <button onclick="bulbID(0)">Light Off</button>
+    <script>
+        function bulbID(vc){
+            var img;
+            if(vc==0){
+                img = "./images/pic_bulboff.gif"
+            }
+            else{
+                img = "./images/pic_bulbon.gif"
+            }
+            document.getElementById('bulbID').src = img;
+        }
+    </script>
+        </body>
+</html> -->
