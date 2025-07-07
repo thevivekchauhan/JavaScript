@@ -387,7 +387,7 @@
 
     <!-- one class which used in many div like this  -->
     <!-- The syntax for class is: write a dot character (.) -->
-     <!-- A class name can be used by multiple HTML elements, 
+    <!-- A class name can be used by multiple HTML elements, 
      while an id name must only be used by one HTML element within the page -->
     <style>
       .v1 {
@@ -417,29 +417,40 @@
     </div>
     <hr />
 
-
     <!-- The syntax for id is: write a hash character (#) -->
-     <!-- A class name can be used by multiple HTML elements, 
+    <!-- A class name can be used by multiple HTML elements, 
      while an id name must only be used by one HTML element within the page -->
     <style>
-      #hola{
+      #hola {
         color: blanchedalmond;
-        background-color: rgb(13, 10, 10); 
+        background-color: rgb(13, 10, 10);
         border: 2px solid rgb(241, 37, 37);
         margin: 20px;
         padding: 20px;
         font-family: cursive;
       }
     </style>
-      
-      <div id="hola">
-        <h3>Hola, I'm from Spain. what about you ?</h3>
-      </div>
 
+    <div id="hola">
+      <h3>Hola, I'm from Spain. what about you ?</h3>
+    </div>
 
-      <!-- This is iframe which is used to display another web page in the current web page. -->
-      <iframe src="https://vivekwithcar.vercel.app/" frameborder="0" height="300px" width="100%" title="Vivek's portfolio"></iframe>
+    <!-- This is iframe which is used to display another web page in the current web page. -->
+    <iframe
+      src="https://vivekwithcar.vercel.app/"
+      frameborder="0"
+      height="300px"
+      width="100%"
+      title="Vivek's portfolio"
+    ></iframe>
+    <br />
+    <br />
 
+    <picture>
+      <source srcset="../images/dubai.jpg" width="500px" height="300px"  media="(max-width: 600px)" />
+      <source srcset="../images/yinyang.png" width="500px" height="300px" style="background-attachment: fixed; background-position: center;" media="(max-width: 1500px)" />
+      <img src="../images/yinyang.png" alt="yinyang" width="200px" height="200px"  />
+    </picture>
 
     <br />
     <br />
