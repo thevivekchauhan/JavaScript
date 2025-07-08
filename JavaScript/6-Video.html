@@ -1,43 +1,68 @@
-<!DOCTYPE html> 
-<html> 
-<body> 
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                background-color: lightcyan;
+            }
+        </style>
+    </head>
+  <body>
+    <div style="text-align: center">
+      <h1 style="font-family: cursive">This is Video.</h1>
+      <button onclick="playPause()">Play/Pause</button>
+      <button onclick="makeBig()">Big</button>
+      <button onclick="makeSmall()">Small</button>
+      <button onclick="makeNormal()">Normal</button>
+      <br /><br />
+      <video id="video1" width="420">
+        <source src="./videos/video1.mp4" type="video/mp4" />
+        <source src="./videos/video1.mp4" type="video/ogg" />
+        Your browser does not support HTML video.
+      </video>
+    </div>
 
-<div style="text-align:center"> 
-  <button onclick="playPause()">Play/Pause</button> 
-  <button onclick="makeBig()">Big</button>
-  <button onclick="makeSmall()">Small</button>
-  <button onclick="makeNormal()">Normal</button>
-  <br><br>
-  <video id="video1" width="420">
-    <source src="./videos/video1.mp4" type="video/mp4">
-    <source src="./videos/video1.mp4" type="video/ogg">
-    Your browser does not support HTML video.
-  </video>
-</div> 
+    <script>
+      var myVideo = document.getElementById("video1");
 
-<script> 
-var myVideo = document.getElementById("video1"); 
+      function playPause() {
+        if (myVideo.paused) myVideo.play();
+        else myVideo.pause();
+      }
 
-function playPause() { 
-  if (myVideo.paused) 
-    myVideo.play(); 
-  else 
-    myVideo.pause(); 
-} 
+      function makeBig() {
+        myVideo.width = 660;
+      }
 
-function makeBig() { 
-    myVideo.width = 660; 
-} 
+      function makeSmall() {
+        myVideo.width = 420;
+      }
 
-function makeSmall() { 
-    myVideo.width = 420; 
-} 
+      function makeNormal() {
+        myVideo.width = 320;
+      }
+    </script>
+    <br />
+    <br />
+    <br />
+    <center>
+      <h1 style="font-family: cursive">This is audio.</h1>
+      <!-- <audio controls autoplay muted> -->
+      <audio controls>
+        <source src="./audio/Hymn For The Weekend.mp3" type="audio/ogg" />
+        <source src="./audio//Hymn For The Weekend.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
+    </center>
 
-function makeNormal() { 
-    myVideo.width = 320; 
-} 
-</script> 
-
-</body> 
+    <br />
+    <br />
+    <br />
+    <br />
+    <center>
+    <h1>This is show data which you want to show in</h1>
+    <br />
+    <object width="70%" height="400px" data="../HTML/first.html"></object>
+    </center>
+  </body>
 </html>
-
