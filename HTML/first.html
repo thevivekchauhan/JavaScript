@@ -446,12 +446,158 @@
     <br />
     <br />
 
+    <!-- when width 600px then change to image  -->
     <picture>
-      <source srcset="../images/dubai.jpg" width="500px" height="300px"  media="(max-width: 600px)" />
-      <source srcset="../images/yinyang.png" width="500px" height="300px" style="background-attachment: fixed; background-position: center;" media="(max-width: 1500px)" />
-      <img src="../images/yinyang.png" alt="yinyang" width="200px" height="200px"  />
+      <source
+        srcset="../images/dubai.jpg"
+        width="500px"
+        height="300px"
+        media="(max-width: 600px)"
+      />
+      <source
+        srcset="../images/yinyang.png"
+        width="500px"
+        height="300px"
+        style="background-attachment: fixed; background-position: center"
+        media="(max-width: 1500px)"
+      />
+      <img
+        src="../images/yinyang.png"
+        alt="yinyang"
+        width="200px"
+        height="200px"
+      />
     </picture>
+    <hr />
 
+    <!-- The HTML <code> element  is used to define a piece of computer code -->
+    <code>
+      x = 5; <br />
+      y = 6; <br />
+      z = x + y; <br />
+      console.log(z); <br />
+    </code>
+    <hr />
+
+    <!-- To preserve extra whitespace and line-breaks, you can put the <code> element inside a <pre> element: -->
+    <pre>
+      <code>
+        x = 8;
+        y = 32;
+        z = 14;
+        v = x + y + z;
+        console.log(v);
+      </code>
+    </pre>
+    <hr />
+
+    <!-- Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+    Examples of semantic elements: <img>, <table>, and <article> - Clearly defines its content. -->
+
+    <nav
+      style="
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(16, 17, 17);
+      "
+    >
+      <a href="./first.html" target="_blank">First page</a>
+      <a href="./Responsive.html" target="_blank">Responsive page</a>
+      <a href="./second.html" target="_blank">Second page</a>
+    </nav>
+    <hr />
+
+    <!-- < (less than) = &lt; 
+         > (greater than) = &gt; -->
+    <p>2 &lt; 3;</p>
+    <p>3 &gt; 2;</p>
+    <p>B &hearts; R</p>
+    <p>B &rarr; R</p>
+    <p>B &larr; R</p>
+    <p>&#128151;</p>
+    <hr>
+
+      <!-- Form  -->
+    <pre>
+      <code>
+        <label for="fname">
+            Label attributes:<br>
+            1) for => "fname": Connects the label to the input with id="fname". <br>
+            Clicking the label focuses the input.<br><br>
+            Input attributes:<br>
+            1) type => "text": Makes a text box.<br>
+            2) id => Uniquely identifies an element, used for linking with.<br>
+            3) name => Assigns a name to the input for form data submission <br>
+            (sent as key in name=value).<br>
+            4) value => Sets the value that is submitted <br>
+            when the input is selected <br>
+            or filled (mainly for radio, checkbox, hidden).<br>
+            5) required =>	Ensures the user must fill or <br>
+            select the field before submitting the form.<br>
+      </code>
+    </pre>
+    <hr>
+
+<form style="border: 5px dotted #e52727; padding: 20px; margin: 20px; text-align: center;">
+  
+  <label for="firstName">First Name:</label>
+  <input type="text" id="firstName" name="first_name" required><br><br>
+
+  <label for="lastName">Last Name:</label>
+  <input type="text" id="lastName" name="last_name" required><br><br>
+
+  <label for="phone">Phone number:</label>
+  <input type="number" id="phone" name="phone_number" required><br><br>
+
+  <label for="email">Email address:</label>
+  <input type="email" id="email" name="email" required><br><br>
+
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required><br><br>
+
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday" required><br><br>
+
+  <label>Gender:</label>
+  <input type="radio" id="male" name="gender" value="male" required>
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label><br><br>
+
+  <label>Skills:</label>
+  <input type="checkbox" id="html" name="skills" value="html" required>
+  <label for="html">HTML</label>
+  <input type="checkbox" id="css" name="skills" value="css">
+  <label for="css">CSS</label><br>
+  <input type="checkbox" id="JavaScript" name="skills" value="JavaScript" required>
+  <label for="JavaScript">JavaScript</label>
+  <input type="checkbox" id="reactjs" name="skills" value="reactjs" required>
+  <label for="reactjs">ReactJS</label><br>
+  <input type="checkbox" id="nextjs" name="skills" value="nextjs" required>
+  <label for="nextjs">NextJS</label><br>
+  <br>
+
+  <label for="degree">Choose your degree:</label>
+  <select name="degree" id="degree" placeholder="Select Degree" required>
+    <option value="BCA">BCA</option>
+    <option value="MCA">MCA</option>
+    <option value="BSC.IT">BSC.IT</option>
+    <option value="MSC.IT">MSC.IT</option>
+    <option value="B.tech">B.tech</option>
+    <option value="M.tech">M.tech</option>
+  </select>
+  <br>
+  <br>
+
+  <!-- <textarea name="message" id="message" required cols="30" rows="8" placeholder="Enter your message here...">
+  </textarea> -->
+
+<br>
+  <br>
+  <button onclick="alert('Your form Submitted!')">Submit</button>
+</form>
+
+<hr>
     <br />
     <br />
     <br />
